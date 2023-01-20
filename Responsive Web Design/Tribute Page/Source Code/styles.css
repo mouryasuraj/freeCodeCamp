@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+  }
+  main{
+    margin:3% 0.5%;
+    background-color:#eee;
+    border-radius:7px;
+    padding:15px;
+  }
+  #title{
+    text-align:center;
+    font-size:40px;
+    margin:30px 0 15px 0;
+    font-weight:700;
+  }
+  #sub-title{
+    text-align:center;
+    margin:5px 0 15px 0;
+  }
+  #img-div{
+    width:100%;
+    background-color:#ffff;
+    padding:20px;
+  }
+  #image{
+    display:block;
+    width:1075px;
+    max-width:100%;
+    margin:auto;
+  }
+  #img-caption{
+    text-align:center;
+    font-size:15px;
+    margin:20px auto 0 auto;
+  }
+  #tribute-info{
+    font-size:16px;
+    text-align:center;
+    margin:40px 0;
+  }
+  .bold{
+    font-weight:800;
+  }
+  ul{
+    font-size:15.5px;
+    margin:auto;
+    max-width:590px;
+    font-weight:300;
+  }
+  ul > li{
+    margin:20px 0;
+  }
+  li:last-child{
+    margin-bottom:50px;
+  }
+  .quote{
+    max-width:590px;
+    font-weight:400;
+    margin:auto;
+  }
+  footer{
+    margin-bottom:30px;
+  }
+  h2{
+    font-style:normal;
+    font-size:20px;
+    text-align:center;
+    margin-top:40px;
+  }
+  #tribute-link{
+    color:#74638f
+  }
