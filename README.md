@@ -2,7 +2,7 @@
 I am doing certification of Responsive Web Desgin from freeCodeCamp.
 I have done all project.
 
-##Projects 
+#Projects 
 
 ###1.Magzine
 
