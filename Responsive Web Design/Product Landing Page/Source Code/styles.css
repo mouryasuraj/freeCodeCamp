@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* Common Properties */
+*{
+  margin:0;
+  padding:0; 
+  box-sizing:border-box;
+  font-family: 'Lato',sans-serif;
+
+}
+body{
+    background-color: #eee;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Header Started */
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    background-color: #eee;
+}
+header .logo{
+    width: 60vw;
+}
+#header-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+nav{
+    width: 40vw;
+}
+header ul{
+    width: 90%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Header ended */
+
+/* Hero Section Started */
+
+#hero{
+    width: 100%;
+    padding: 25px;
+    margin-top: 50px;
+}
+ #hero h2{
+    text-align: center;
+}
+#hero #form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 328px;
+    margin:25px auto 0 auto;
+    padding-inline: 10px;
+}
+#email{
+    padding: 5px;
+}
+#submit{
+    padding: 5px 15px;
+    background-color: #f1c40f;
+    font-weight: 900;
+    border: 0;
+    border-radius: 2px;
+    margin: 15px auto;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hero Section ended */
+
+/* Feature Section started */
+
+#features{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.icons{
+    width: 180px;
+    height: 125px;
+    color:darkorange     ;
+}
+
+.desc{
+    width: 799px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+article{
+    display: flex;
+}
+
+/* Feature Section ended */
+
+/* How it works Section started */
+
+#how-it-works{
+    width: 100%;
+    max-width: 1000px;
+    margin:50px auto;
+}
+#video{
+    max-width: 560px;
+    width: 98%;
+    height: 315px;
+    margin: auto;
+}
+
+/* How it works Section end */
+/* Pricing Section started */
+
+#pricing{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    width: 100%;
+    max-width: 313px;
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    margin: 10px;
+}
+.product .level{
+    background-color: #ddd;
+    padding: 12px 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.product .price{
+    margin-bottom: 20px;
+}
+.product p{
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: 0;
+    border-radius: 2px;
+    margin-block: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+button:hover, #submit:hover{
+    opacity: .8;
+}
+
+/* Pricing Section ended */
+
+/* Footer Started */
+
+footer{
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ddd;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    border-radius: 3px;
+}
+footer ul{
+    list-style: none;
+    text-align: right;
+}
+footer ul li{
+    margin-inline: 10px;
+    display: inline-block;
+}
+footer p{
+    opacity: 0.7;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Footer ended */
+
+/* Media Query */
+@media only screen and (max-width:788px){
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        margin-block:3px ;
+    }
+    #hero{
+        margin-top: 90px;
+    }
+}
+@media only screen and (max-width:528px){
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    header ul{
+        margin: 20px auto 0 auto;
+        
+    }
+    #hero{
+        margin-top: 150px;
+    }
+    #video{
+        margin: 5px;
+    }
+    
+}
