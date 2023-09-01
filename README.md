@@ -1,5 +1,5 @@
 # freeCodeCamp
-I am doing certification of Responsive Web Desgin from freeCodeCamp.
+I have done certification of Responsive Web Desgin from freeCodeCamp.
 I have done all project.
 
 # Projects 
