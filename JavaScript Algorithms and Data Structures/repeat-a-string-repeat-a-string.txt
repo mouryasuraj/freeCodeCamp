@@ -1,0 +1,31 @@
+//1st way using normal if else method
+// function repeatStringNumTimes(str, num) {
+//   let repeatedStr = '';
+//   if(num<1){
+//     return "";
+//   }else{  
+//     for(let i=1; i<=num; i++){
+//         repeatedStr += str;
+//     }
+//   }
+//   return repeatedStr;
+// }
+
+
+// 2nd way using recursion
+// function repeatStringNumTimes(str, num) {
+//   if(num<1){
+//     return "";
+//   }else{
+//     return str + repeatStringNumTimes(str, num-1);
+//   }
+// }
+
+
+
+// third way using recursion with the help of ternary operator
+function repeatStringNumTimes(str, num) {
+  return num > 0 ? str + repeatStringNumTimes(str, num-1) : '';
+}
+
+console.log(repeatStringNumTimes("abc", 3));
