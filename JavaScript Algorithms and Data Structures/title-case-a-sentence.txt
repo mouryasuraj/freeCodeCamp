@@ -1,0 +1,38 @@
+// First way
+// function titleCase(str) {
+//     const strArr = str.split(' ')
+//     let firstLetterCapOfEveryWord = '';
+//     for (let i = 0; i < strArr.length; i++) {
+//         let firstLetterCap = strArr[i][0].toUpperCase();
+//         firstLetterCapOfEveryWord += firstLetterCap;
+//         for (let j = 1; j < strArr[i].length; j++) {
+//             let remainingStr = strArr[i][j].toLowerCase();
+//             firstLetterCapOfEveryWord += remainingStr;
+//         }
+//         firstLetterCapOfEveryWord += ' ';   
+//     }
+//     firstLetterCapOfEveryWord = firstLetterCapOfEveryWord.slice(0,-1);
+//     return firstLetterCapOfEveryWord;
+// }
+
+
+//2nd Way
+// function titleCase(str) {
+//   return str.toLowerCase().split(' ').map((word) =>{
+//     return word.replace(word.charAt(0), word.charAt(0).toUpperCase())
+//   }).join(' ')
+// }
+
+
+
+// Third way
+function titleCase(str) {
+  let splitWords = str.split(" ");
+  let updatedStr = [];
+  for(let l in splitWords){
+    updatedStr[l] =  splitWords[l][0].toUpperCase() + splitWords[l].slice(1).    toLowerCase();
+  }
+  return updatedStr.join(' ')
+}
+
+console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));
